@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.back{
+    background-image: linear-gradient(rgba(0,0,0,979), rgba(78,77,77,0.13)), url(image/businessman-sitting-by-table-cafe.jpg);
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+main{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+   position: fixed;
+   top: 0;
+   background-color: rgb(87, 85, 85);
+   z-index: 1;
+   padding: 10px;
+   left: 30px;
+   right: 30px;
+}
+.container .title{
+    display: flex;
+    align-items: center;
+
+}
+.container .title h6{
+    font-size: 30px;
+}
+.container .title img{
+    background-color: #f4a261;
+    border-radius: 50px;
+    border-color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+.container .list{
+    display: flex;
+    align-items: center;
+}
+.container .list ul{
+    display: flex;
+    font-size: 25px;
+    gap: 50px;
+}
+.container .list ul a{
+    color: white;
+}
+.container .list ul a:hover{
+    color: #e76f51;
+}
+.container .btn_tlg{
+    font-size: 25px;
+    margin-left: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    border-color: black;
+    color: #f4a261;
+    border: 2px solid #f4a261;
+    padding: 10px;
+    border-radius: 50px;
+}
+.container .btn_tlg:hover{
+    border: none;
+    color: #e76f51;
+    background-color: #e76f51;
+}
+
+@media screen and (max-width:720px){
+    .back{
+        background-image: url(image/businessman-sitting-by-table-cafe.jpg);
+        background-position: center;
+        height: 800px;
+        width: 100%;
+    }
+    header .container{
+        display: block;
+        /* flex-direction: column; */
+        color: white;
+       position: fixed;
+       top: 0;
+       background-color: rgb(87, 85, 85);
+        
+    }
+    .container .list{
+       display: none;
+    }
+}
+/* -----------SECTION UN ----------------- */
+.un{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.un .title_gnrl h5{
+    font-size: 25px;
+    line-height: 15px;
+    margin-top: 170px;
+    color: #f4a261;
+}
+.un .title_gnrl h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    color:white
+}
+.un .title_gnrl a{
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+.un .title_gnrl .guid:hover{
+    background-color:#f4a261 ;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+@media screen and (max-width:720px){
+    .un{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .un .title_gnrl h5{
+        font-size: 25px;
+        line-height: 10px;
+        margin-top: 100px;
+        color: goldenrod;
+    }
+    .un .title_gnrl h1{
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        color: white;
+    }
+    .un .image img{
+        width: 100%;
+        margin: auto;
+    
+    }
+}
+
+/* -------------------section deux -------------------*/
+.deux{
+    background-color: #f4a261;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    top: 600px;
+    z-index: -1;
+    width: 80%;
+    margin: auto;
+
+}
+.deux .image_quatre img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid white;
+    position: relative;
+}
+.deux .image_quatre .im_2{
+    position: relative;
+    left: -15px;
+}
+.deux .image_quatre .im_3{
+    position: relative;
+    left: -25px;
+}
+.deux .image_quatre .im_4{
+    position: relative;
+    left: -35px;
+}
+.deux span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.deux .etoil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.deux .etoil img{
+    width: 20px;
+    background-color: goldenrod;
+}
+.deux .etoil P{
+    font-weight: bold;
+}
+@media screen and (max-width:720px){
+    .deux{
+        background-color: goldenrod;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 30px;
+        position: absolute;
+        top: 800px;
+        z-index: -1;
+        /* width: 100%; */
+        margin: auto;
+    
+    }
+    .deux .etoil {
+        display: flex;
+        gap: 5px;
+    }
+
+}
+/*------------ SECTION TROIS --------------*/
+.trois{
+    display: flex;
+    justify-content: space-between;
+}
+.trois .welcom img{
+    width: 600px;
+    margin: auto;
+}
+.trois .a_propos h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: goldenrod;
+    
+}
+.trois .a_propos h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.trois .a_propos p{
+    font-size: 23px;
+    font-weight: 400;
+    text-align: justify;
+    color: gray;
+}
+.trois .a_propos .p_1{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:720px){
+    .trois{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    .trois .welcom img{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*-------------- SECTION QUATRE -----------------*/
+.container_quatre{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.quatre .list_stop{
+    border: 2px solid red;
+    border-radius: 50px;
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+    height: 400px;
+    position: sticky;
+    top: 300px;
+    /* width: 400px; */
+    /* margin: auto; */
+}
+.quatre h3,h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quatre .list_stop .lien:hover{
+    background-color: brown;
+}
+.quatre .list_stop .lien_1{
+    background-color: brown;
+}
+.quatre .list_stop .lien, .lien_1{
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    padding: 12px;
+    font-weight: 500;
+    width: 300px;  
+}
+.text_scrol{
+    /* width: 800px; */
+}
+.quatre .list_stop .lien a{
+    color: black;
+}
+.quatre .list_stop .lien_1 a{
+    color: black;
+}
+
+.quatre .text_scrol h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.quatre .text_scrol p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: gray;
+    font-weight: 400;
+}
+.quatre .text_scrol span{
+    color: rgb(73, 73, 73);
+}
+.blockquote{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 40px;
+    /* width: 700px; */
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.blockquote i{
+    color: gold;
+    font-size: 50px;
+}
+.quatre .text_scrol .point{
+    font-size: 40px;
+}
+.quatre .text_scrol img{
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.quatre .text_scrol .text_3 .flex{
+    display: flex;
+}
+.quatre .text_scrol .text_3 .flex h6{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.quatre .text_scrol .text_3 .flex p{
+    font-size: 20px;
+    font-weight: 600;
+    /* width: 300px; */
+}
+.quatre .text_scrol .text_4 .mature img{
+    width: 700px;
+}
+@media screen and (max-width:720px){
+    .container_quatre{
+        display: flex;
+        flex-direction: column;  
+    }
+    .quatre .list_stop{
+        border: 2px solid red;
+        border-radius: 50px;
+        margin: 20px;
+        font-size: 20px;
+        padding: 10px;
+        height: 400px;
+        position: relative;
+        top: 200px;
+    }
+    .quatre h3,h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .quatre .list_stop .lien, .lien_1{
+        margin-bottom: 30px;
+        border-radius: 50px;
+        background-color: whitesmoke;
+        padding: 12px;
+        font-weight: 500;
+        width: 150px;
+    }
+    .quatre .text_scrol img{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    .blockquote{
+        border-radius: 10px;
+        background-color: whitesmoke;
+        padding: 40px;
+        width: 400px;
+        margin: auto;
+        font-size: 27px;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .quatre .text_scrol .text_3 .flex p{
+        font-size: 20px;
+        font-weight: 400;
+        /* width: 50px; */
+    }
+    .quatre .text_scrol .text_3 .flex p{
+        font-size: 20px;
+        font-weight: 600;
+        width: 100px;
+    }
+    .quatre .text_scrol .text_4 .mature img{
+        width: 200px;
+    }
+
+}
+/*---------------------- section cinq ---------------------*/
+.container_cinq{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 70px
+}
+.container_cinq .smilling img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 10px solid #f4a261;
+    margin-left: 40px;
+}
+.container_cinq .smilling  p{
+    background-color:#f4a261;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    left: 0;
+}
+.container_cinq .smilling .color_1{
+    display: flex;
+    left: 10px;
+}
+.container_cinq .Sophia{
+    margin-left: 30px;
+    /* width: 700px; */
+
+}
+.container_cinq .Sophia h5{
+    font-size: 25px;
+}
+.container_cinq .Sophia h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+.container_cinq .Sophia p{
+    font-size: 30px;
+    font-weight: 500px;
+    margin-top: 20px;
+    color: gray;
+}
+@media screen and (max-width:720px){
+    .container_cinq{
+        display: flex;
+        flex-direction: column;
+        /* margin-left: 30px; */
+        margin-top: 70px;
+    }
+    .container_cinq .smilling  p{
+        background-color: blue;
+        border-radius: 100px;
+        /* width: 80px; */
+        height: 150px;
+        /* left: 0; */
+    }
+}
+
+/*----------------------- pârtie sex ---------------------*/
+.personels{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    
+}
+.sex h1{
+    text-align: center;
+   font-size: 45px;
+   margin-bottom: 60px;
+}
+.sex h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #f4a261;
+}
+.sex .per_un{
+    background-image: linear-gradient(rgba(0,0,0,979), rgba(78,77,77,0.13)), url(image/businessman-sitting-by-table-cafe.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    color: white;
+}
+.sex .per_un .une img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 100%;
+    border: 2px solid white;
+   
+    
+}
+.sex .per_un .une{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(204,102,77,255);
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.sex .nombre img{
+    width: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.sex .nombre span{
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.sex .nombre p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+@media screen and (max-width:720px){
+    .personels{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/*----------------------- FOOTER ------------------*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    background-color: #f4a261;
+    height: 600px;
+}
+footer .form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* width: 450px; */
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 5px 15px;
+    padding-bottom: 30px;
+}
+footer .form h1{
+    font-size: 55px;
+    margin-top: 20px;
+}
+footer .form input{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+footer .form input:hover{
+    border: 1px solid #f4a261;
+    
+}
+footer .form a{
+    text-align: center;
+    background-color: coral;
+    width: 150px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+footer .rensegnement p, span{
+    font-size: 30px;
+    color: white;
+    margin-top: 15px;
+    
+}
+footer .rensegnement .say{
+    color: coral;
+    margin-top: 25px;
+    
+}
+footer .rensegnement .contact{
+    color: black;
+}
+footer .rensegnement i{
+    background-color: coral;
+    border-radius: 50px;
+    padding: 10px;
+}
+footer .rensegnement i:hover{
+    background-color: brown;
+}
+footer .rensegnement .social{
+    color: coral;
+}
+footer .rensegnement .design{
+    color: brown;
+}
+@media screen and (max-width:720px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        background-color: #f4a261;
+    }
+    footer .form{
+        order: 2;
+    }
+    footer .rensegnement{
+        order: 1;
+    }
+}
